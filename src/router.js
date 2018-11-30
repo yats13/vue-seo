@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+import Category from './views/Category.vue'
 
 Vue.use(Router)
 
@@ -44,6 +45,10 @@ export default new Router({
           }
         ]
       }
+    },
+    {
+      path:'category/:id',
+      name:'category'
     }
   ],
   mode: 'history',
